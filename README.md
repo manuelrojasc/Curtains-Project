@@ -1,6 +1,6 @@
 # curtain-project
 
-> A Vue.js project
+>This is a project created by students of the software construction course II 
 
 ## Build Setup
 
