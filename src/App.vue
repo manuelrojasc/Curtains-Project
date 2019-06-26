@@ -41,35 +41,31 @@
             <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-loading"></i>
-                <span>Navigator One</span>
+                <span>Modelos</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">item one</el-menu-item>
-                <el-menu-item index="1-2">item one</el-menu-item>
-                <el-menu-item index="1-3">item three</el-menu-item>
+                <el-menu-item index="1-1">modelo 1</el-menu-item>
+                <el-menu-item index="1-2">modelo 2</el-menu-item>
+                <el-menu-item index="1-3">modelo 3</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-submenu index="2">
               <template slot="title">
                 <i class="el-icon-s-help"></i>
-                <span>Navigator two</span>
+                <span>Colores</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">item one</el-menu-item>
-                <el-menu-item index="1-2">item one</el-menu-item>
-                <el-menu-item index="1-3">item three</el-menu-item>
+                <el-menu-item index="1-1">rojo</el-menu-item>
+                <el-menu-item index="1-2">azul</el-menu-item>
+                <el-menu-item index="1-3">verde</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">
                 <i class="el-icon-aim" color="red"></i>
-                <span>Navigator three</span>
+                <span>Configuraciones</span>
               </template>
-              <el-menu-item-group>
-                <el-menu-item index="1-1">item one</el-menu-item>
-                <el-menu-item index="1-2">item one</el-menu-item>
-                <el-menu-item index="1-3">item three</el-menu-item>
-              </el-menu-item-group>
+             
             </el-submenu>
           </el-menu>
         </el-aside>
