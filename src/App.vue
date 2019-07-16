@@ -81,12 +81,11 @@
           </el-header>
 
           <el-main>
-            <h1>aqui ira la vista de la ventana</h1>
+          <router-view></router-view>
           </el-main>
         </el-container>
       </el-container>
     </div>
-    <router-view/>
   </div>
 </template>
 <script>

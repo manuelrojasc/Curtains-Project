@@ -5,8 +5,9 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import VueKonva from 'vue-konva'
 Vue.config.productionTip = false
-Vue.use(ElementUI)
+Vue.use(ElementUI, VueKonva)
 
 /* eslint-disable no-new */
 new Vue({
