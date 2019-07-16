@@ -4,6 +4,9 @@
       <v-layer>
         <v-rect v-for="item in square" :key="item.id" :config="item" />
       </v-layer>
+      <v-layer>
+        <v-line :config="configLine" />
+      </v-layer>
     </v-stage>
 
     <button id="save" v-on:click="downloadImage">Descargar</button>
@@ -11,6 +14,7 @@
 </template>
 <script>
 export default {
+  props: ["configLine"],
   data() {
     return {
       configKonva: {
