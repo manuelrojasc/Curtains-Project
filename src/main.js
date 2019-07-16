@@ -7,7 +7,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import VueKonva from 'vue-konva'
 Vue.config.productionTip = false
-Vue.use(ElementUI, VueKonva)
+Vue.use(ElementUI)
+Vue.use(VueKonva)
 
 /* eslint-disable no-new */
 new Vue({
