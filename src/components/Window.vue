@@ -8,28 +8,29 @@
         <v-rect v-for="item in square" :key="item.id" :config="item" />
         <v-image
           :config="{
-            x:212,
-            y:40,
-            width:645,
-            height: 400,
+            x:222,
+            y:62,
+            width:596,
+            height:346,
             image: image
           }"
         />
+
         <v-image
           :config="{
-            x:210,
-            y:40,
-            width:300,
-            height: 400,
+            x:222,
+            y:62,
+            width:280,
+            height: 346,
             image: curtain
           }"
         />
         <v-image
           :config="{
-            x:560,
-            y:40,
-            width:300,
-            height: 400,
+            x:538,
+            y:62,
+            width:280,
+            height: 346,
             image: curtain
           }"
         />

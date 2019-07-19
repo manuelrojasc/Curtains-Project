@@ -145,7 +145,7 @@ export default {
                 528,
                 -22
               ],
-              fill: "green",
+              fill: "#f5f5dc",
               stroke: "black",
               strokeWidth: 5,
               closed: true,
@@ -170,7 +170,7 @@ export default {
                 528,
                 -22
               ],
-              fill: "red",
+              fill: "#5e2129",
               stroke: "black",
               strokeWidth: 5,
               closed: true,
@@ -195,7 +195,7 @@ export default {
                 528,
                 -22
               ],
-              fill: "blue",
+              fill: " #3f888f",
               stroke: "black",
               strokeWidth: 5,
               closed: true,
@@ -219,7 +219,7 @@ export default {
                 528,
                 -22
               ],
-              fill: "yellow",
+              fill: "#F5F5F5",
               stroke: "black",
               strokeWidth: 5,
               closed: true,
