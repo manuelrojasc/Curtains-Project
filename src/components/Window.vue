@@ -4,8 +4,35 @@
       <v-layer>
         <v-line :config="configLine" />
       </v-layer>
-      <v-layer>
+      <v-layer ref="layer">
         <v-rect v-for="item in square" :key="item.id" :config="item" />
+        <v-image
+          :config="{
+            x:212,
+            y:40,
+            width:645,
+            height: 400,
+            image: image
+          }"
+        />
+        <v-image
+          :config="{
+            x:210,
+            y:40,
+            width:300,
+            height: 400,
+            image: cortina
+          }"
+        />
+        <v-image
+          :config="{
+            x:560,
+            y:40,
+            width:300,
+            height: 400,
+            image: cortina
+          }"
+        />
       </v-layer>
     </v-stage>
 
@@ -13,6 +40,7 @@
   </div>
 </template>
 <script>
+const cortinaSRC = require("../img/cortina1.png");
 export default {
   props: ["configLine"],
   data() {
@@ -33,7 +61,9 @@ export default {
           strokeWidth: 4,
           name: "rect2"
         }
-      ]
+      ],
+      image: null,
+      cortina: null
     };
   },
   methods: {
@@ -52,6 +82,19 @@ export default {
       var dataURL = stage.toDataURL();
       this.downloadURI(dataURL, "diseño.jpg");
     }
+  },
+  created() {
+    const image = new window.Image();
+    const cortina = new window.Image();
+    cortina.src = cortinaSRC;
+    cortina.onload = () => {
+      this.cortina = cortina;
+    };
+    image.src = "https://wallpaperstock.net/wallpapers/thumbs1/44468wide.jpg";
+    image.onload = () => {
+      // set image only when it is loaded
+      this.image = image;
+    };
   }
 };
 </script>
