@@ -2,10 +2,10 @@
   <div id="stage">
     <v-stage ref="stage" :config="configKonva">
       <v-layer>
-        <v-rect v-for="item in square" :key="item.id" :config="item" />
+        <v-line :config="configLine" />
       </v-layer>
       <v-layer>
-        <v-line :config="configLine" />
+        <v-rect v-for="item in square" :key="item.id" :config="item" />
       </v-layer>
     </v-stage>
 
@@ -24,24 +24,14 @@ export default {
       square: [
         {
           id: 1,
-          x: 80,
-          width: 900,
-          height: 480,
+          x: 220,
+          y: 60,
+          width: 600,
+          height: 350,
           fill: "pink",
           stroke: "black",
           strokeWidth: 4,
           name: "rect2"
-        },
-
-        {
-          x: 210,
-          y: 40,
-          width: 650,
-          height: 400,
-          fill: "red",
-          stroke: "black",
-          strokeWidth: 4,
-          name: "rect1"
         }
       ]
     };
