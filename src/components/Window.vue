@@ -28,7 +28,7 @@ export default {
           y: 60,
           width: 600,
           height: 350,
-          fill: "pink",
+          fill: "white",
           stroke: "black",
           strokeWidth: 4,
           name: "rect2"

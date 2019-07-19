@@ -114,6 +114,10 @@ export default {
         {
           id: 3,
           name: "Azul"
+        },
+        {
+          id: 4,
+          name: "amarillo"
         }
       ]
     };
@@ -173,11 +177,49 @@ export default {
               tension: 0,
               draggable: false
             }
+          : id == 3
+          ? {
+              x: 450,
+              y: 25,
+              points: [
+                -366,
+                -22,
+                -366,
+                450,
+                500,
+                450,
+                120,
+                450,
+                528,
+                450,
+                528,
+                -22
+              ],
+              fill: "blue",
+              stroke: "black",
+              strokeWidth: 5,
+              closed: true,
+              tension: 0,
+              draggable: false
+            }
           : {
               x: 450,
               y: 25,
-              points: [-366, -22, -366, 450, 500, 450, 120, 450, 528, 450, 528, -22],
-              fill: "blue",
+              points: [
+                -366,
+                -22,
+                -366,
+                450,
+                500,
+                450,
+                120,
+                450,
+                528,
+                450,
+                528,
+                -22
+              ],
+              fill: "yellow",
               stroke: "black",
               strokeWidth: 5,
               closed: true,
