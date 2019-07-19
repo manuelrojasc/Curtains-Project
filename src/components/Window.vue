@@ -21,7 +21,7 @@
             y:40,
             width:300,
             height: 400,
-            image: cortina
+            image: curtain
           }"
         />
         <v-image
@@ -30,7 +30,7 @@
             y:40,
             width:300,
             height: 400,
-            image: cortina
+            image: curtain
           }"
         />
       </v-layer>
@@ -40,7 +40,7 @@
   </div>
 </template>
 <script>
-const cortinaSRC = require("../img/cortina1.png");
+const curtainSRC = require("../img/cortina1.png");
 export default {
   props: ["configLine"],
   data() {
@@ -63,7 +63,7 @@ export default {
         }
       ],
       image: null,
-      cortina: null
+      curtain: null
     };
   },
   methods: {
@@ -85,10 +85,10 @@ export default {
   },
   created() {
     const image = new window.Image();
-    const cortina = new window.Image();
-    cortina.src = cortinaSRC;
-    cortina.onload = () => {
-      this.cortina = cortina;
+    const curtain = new window.Image();
+    curtain.src = curtainSRC;
+    curtain.onload = () => {
+      this.curtain = curtain;
     };
     image.src = "https://wallpaperstock.net/wallpapers/thumbs1/44468wide.jpg";
     image.onload = () => {
