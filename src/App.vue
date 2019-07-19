@@ -50,7 +50,7 @@
             <el-submenu index="2">
               <template slot="title">
                 <i class="el-icon-s-help"></i>
-                <span>Colores</span>
+                <span>COLORES DE LA PARED</span>
               </template>
               <el-menu-item-group>
                 <el-menu-item
@@ -105,19 +105,19 @@ export default {
       items: [
         {
           id: 1,
-          name: "Verde"
+          name: "BEIGE"
         },
         {
           id: 2,
-          name: "Rojo"
+          name: "ROJO VINO"
         },
         {
           id: 3,
-          name: "Azul"
+          name: "TURQUESA"
         },
         {
           id: 4,
-          name: "amarillo"
+          name: "BLANCO HUMO"
         }
       ]
     };
